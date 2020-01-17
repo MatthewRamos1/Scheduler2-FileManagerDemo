@@ -10,7 +10,10 @@ import Foundation
 
 extension FileManager {
     static func getDocumentsDirectory() -> URL {
-        FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-        
+       return FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+    }
+    
+    static func pathToDocumentDirectory(filename: String) -> URL {
+        return getDocumentsDirectory().appendingPathComponent(filename)
     }
 }

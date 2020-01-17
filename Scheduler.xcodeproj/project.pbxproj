@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0C540D2223D2106A00358403 /* FileManager + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C540D2123D2106A00358403 /* FileManager + Extensions.swift */; };
+		0C540D2423D21D3000358403 /* PersistenceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C540D2323D21D3000358403 /* PersistenceHelper.swift */; };
 		5712587F2385A80D00805579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5712587E2385A80D00805579 /* AppDelegate.swift */; };
 		571258812385A80D00805579 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571258802385A80D00805579 /* SceneDelegate.swift */; };
 		571258832385A80D00805579 /* ScheduleListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571258822385A80D00805579 /* ScheduleListController.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		0C540D2123D2106A00358403 /* FileManager + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager + Extensions.swift"; sourceTree = "<group>"; };
+		0C540D2323D21D3000358403 /* PersistenceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceHelper.swift; sourceTree = "<group>"; };
 		5712587B2385A80D00805579 /* Scheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scheduler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5712587E2385A80D00805579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		571258802385A80D00805579 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,14 +80,15 @@
 		5712587D2385A80D00805579 /* Scheduler */ = {
 			isa = PBXGroup;
 			children = (
-				5712588C2385A81000805579 /* Info.plist */,
 				5712587E2385A80D00805579 /* AppDelegate.swift */,
 				571258802385A80D00805579 /* SceneDelegate.swift */,
 				571258942385B4BC00805579 /* Event.swift */,
 				0C540D2123D2106A00358403 /* FileManager + Extensions.swift */,
+				0C540D2323D21D3000358403 /* PersistenceHelper.swift */,
 				571258842385A80D00805579 /* Main.storyboard */,
 				571258872385A81000805579 /* Assets.xcassets */,
 				571258892385A81000805579 /* LaunchScreen.storyboard */,
+				5712588C2385A81000805579 /* Info.plist */,
 				0C540D2023D2104600358403 /* Controllers */,
 				0C540D1F23D2101E00358403 /* Supporting Files */,
 			);
@@ -166,6 +169,7 @@
 				571258932385AD0100805579 /* CreateEventController.swift in Sources */,
 				571258832385A80D00805579 /* ScheduleListController.swift in Sources */,
 				5712587F2385A80D00805579 /* AppDelegate.swift in Sources */,
+				0C540D2423D21D3000358403 /* PersistenceHelper.swift in Sources */,
 				0C540D2223D2106A00358403 /* FileManager + Extensions.swift in Sources */,
 				571258812385A80D00805579 /* SceneDelegate.swift in Sources */,
 				571258952385B4BC00805579 /* Event.swift in Sources */,
