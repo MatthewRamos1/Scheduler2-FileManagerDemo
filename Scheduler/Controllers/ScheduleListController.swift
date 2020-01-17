@@ -28,7 +28,8 @@ class ScheduleListController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     events = Event.getTestData().sorted { $0.date < $1.date }
-    tableView.dataSource = self    
+    tableView.dataSource = self
+    print(FileManager.getDocumentsDirectory())
   }
   
   @IBAction func addNewEvent(segue: UIStoryboardSegue) {

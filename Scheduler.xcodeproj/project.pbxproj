@@ -46,7 +46,6 @@
 		0C540D1F23D2101E00358403 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5712588C2385A81000805579 /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -79,6 +78,7 @@
 		5712587D2385A80D00805579 /* Scheduler */ = {
 			isa = PBXGroup;
 			children = (
+				5712588C2385A81000805579 /* Info.plist */,
 				5712587E2385A80D00805579 /* AppDelegate.swift */,
 				571258802385A80D00805579 /* SceneDelegate.swift */,
 				571258942385B4BC00805579 /* Event.swift */,
