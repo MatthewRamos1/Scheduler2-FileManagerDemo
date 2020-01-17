@@ -31,4 +31,17 @@ class PersistenceHelper {
             throw DataPersistenceError.savingError(error)
         }
     }
+    
+    static func loadEvents() -> [Event] {
+        let url = FileManager.pathToDocumentDirectory(filename: filename)
+        
+        if FileManager.default.fileExists(atPath: url.path) {
+            
+        }
+        return []
+    }
+    
+    static func delete(event index: Int) {
+        events.remove(at: index)
+    }
 }

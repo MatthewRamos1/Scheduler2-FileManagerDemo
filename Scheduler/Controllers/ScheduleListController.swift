@@ -27,7 +27,7 @@ class ScheduleListController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    events = Event.getTestData().sorted { $0.date < $1.date }
+//    events = Event.getTestData().sorted { $0.date < $1.date }
     tableView.dataSource = self
     print(FileManager.getDocumentsDirectory())
   }
@@ -39,6 +39,12 @@ class ScheduleListController: UIViewController {
     guard let createEventController = segue.source as? CreateEventController,
       let createdEvent = createEventController.event else {
         fatalError("failed to access CreateEventController")
+    }
+    //persist or save event to documents directory
+    do{
+        try PersistenceHelper.save(item: createdEvent)
+    } catch {
+        print("error saving event with error: \(error)")
     }
     
     // insert new event into our events array
